@@ -31,7 +31,7 @@ public class OrderTask extends Thread {
                 System.out.println("[ OrderTask ]开始处理订单");
 
                 String params = vo.getParams();
-                Thread.sleep(3000);
+                Thread.sleep(4000);
                 Map<String, Object> map = new HashMap<>();
                 map.put("params", params);
                 map.put("time", System.currentTimeMillis());
