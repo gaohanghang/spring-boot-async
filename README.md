@@ -5,10 +5,21 @@
 
 ## 运行效果
 
-
 请求url: http://localhost:8080/order?number=10001
 
+正常情况处理3秒返回，返回结果如下
+
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img/20191010173855.png)
+
+观察控制台打印日志，如下所示：
+
+```
+[ OrderController ] 接到下单请求
+当前待处理订单数： 0
+[ OrderController ] 返回下单结果
+[ OrderTask ]开始处理订单
+[ OrderTask ]订单处理完成
+```
 
 ## 结论
 
